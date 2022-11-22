@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio Site</title>
+	<link href="index.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="./buttonClick.js"></script>
+	<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+</head>
+
+<body>
+<header>
+	<div class="nav-bar">
+		<div id="nav-bar-name">
+			<img src="DesignPortfolio/PersonalLogo.svg">
+			<h1>Micah Tullia</h1>
+		</div>
+		<div class="dropdown">
+		  <button onclick="myFunction()" class="dropbtn">Contact Me</button>
+			  <div id="myDropdown" class="dropdown-content">
+				<a href="mailto: micahtulliadesign@gmail.com">Gmail</a>
+				<a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/micah-tullia?trk=profile-badge">LinkedIn</a>
+			  </div>
+		</div>
+	</div>
+	
+</header>
+	
+<main>
+    <!--SECTION ONE-->
+	<section id="portfolio-preview">
+		<h2 class="portfolio-preview-header" style="text-align: center;">Portfolio Preview</h2>
+		<div class="horizontal-slider">
+			<div class="slider-container">
+				<div class="item">
+					<img src="DesignPortfolio/Cereal.svg">
+					<img src="DesignPortfolio/Asset 8-100.jpg">
+					<img src="DesignPortfolio/WorldDay.svg" style="width: 150px; object-fit: cover; justify-content: center">
+					<img src="DesignPortfolio/SmallEnsembleInternFinal.jpg">
+					<img src="DesignPortfolio/Asset 3-100.jpg">
+					<img src="DesignPortfolio/FoothillsCream.jpg">
+					<img src="DesignPortfolio/MCC.svg" style="width: 155px; height: auto; object-fit: cover; justify-content: center;">
+				</div>
+			</div>
+		</div>
+	</section>
+    <!--SECTION TWO-->
+	<section id="about-me-projects">    
+		<!-- ROW 1-->
+		<div class="rows">
+			<div id="about-me-container">
+				<h2 style="text-align: center;"><strong>About Me</strong></h2>
+				<p id="about-me-body-text">Hello! Welcome to my website coded in HTML and CSS from scratch by yours truly. 
+				I am a hungry young recent graduate based out of Dallas, TX. 
+				I was raised in Southern Louisiana and North Texas. 
+				Whereafter I played collegiate baseball and graduated from 
+				Maryville College just south of Knoxville in East Tennessee. 
+				I am currently a freelance designer with experience in marketing/advertising, graphic design, and website development searching for freelance work or a hired position. 
+				My specialties are illustration, photo, and video editing softwares. 
+				As well as website creation and management for business or other entitites.</p>
+			</div>
+			<div class="profile-picture-container"></div>
+		</div>
+
+
+		<div class="rows">
+			<div class="card-container" id="card-1">
+				<h3 class="card-title">Packaging Design</h3>
+					<div class="card-body">
+								<p class="card-text">Branding Identity - Packaging Advertisement Models</p>
+						<div class="card-button-and-date">
+								<button type="button" onClick="showOne()" class="card-button">View</button>
+						</div>
+					</div>
+				</div>
+			
+			
+				<div class="card-container">
+					<h3 class="card-title">Web Development</h3>
+					<div class="card-body">
+								<p class="card-text">User Interface wireframing and website modeling</p>
+						<div class="card-button-and-date">
+								<button type="button" onClick="showTwo()" class="card-button">View</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-container" id="card-3">
+					<h3 class="card-title">Poster Design</h3>
+					<div class="card-body">
+								<p class="card-text">Posters from professional work, projects, and competitions</p>
+						<div class="card-button-and-date">
+								<button type="button" onClick="showThree()" class="card-button">View</button>
+						</div>
+					</div>
+				</div>
+		</div>
+		
+		
+		
+		<div id="card-one-preview">
+			<div class="preview-horizontal-slider">
+					<div class="preview-slider-container">
+						<div class="preview-item">
+							<img src="DesignPortfolio/FoothillsCream.jpg" style="padding-right: 20px;">
+							<img src="DesignPortfolio/Cereal.svg">
+						</div>
+					</div>
+			</div>
+		</div>
+		
+		
+		<div id="card-two-preview">
+			<div class="preview-horizontal-slider">
+					<div class="preview-slider-container">
+						<div id="card-two-preview-item">
+							<img src="DesignPortfolio/Asset 1-100.jpg">
+							<img src="DesignPortfolio/Asset 2-100.jpg">
+							<img src="DesignPortfolio/Asset 3-100.jpg">
+							<img src="DesignPortfolio/HalfBarrelWebsite.jpg">
+							<img src="DesignPortfolio/Asset 4-100.jpg">
+							<img src="DesignPortfolio/Asset 8-100.jpg">
+							<img src="DesignPortfolio/Asset 7-100.jpg">
+							<img src="DesignPortfolio/Asset 5-100.jpg">
+							<img src="DesignPortfolio/Asset 6-100.jpg">
+						</div>
+					</div>
+			</div>
+		</div>
+		
+		<div id="card-three-preview">
+			<div class="preview-horizontal-slider">
+					<div class="preview-slider-container">
+						<div class="preview-item">
+							<img src="DesignPortfolio/WorldDay.svg" style="width: 140px; object-fit: cover; padding:0px 10px;">
+							<img src="DesignPortfolio/SmallEnsembleInternFinal.jpg" style="object-fit: cover; padding-right: 10px;">
+							<img src="DesignPortfolio/Memorial.svg" id="memorial-image" style="padding-right: 10px;">
+							<img src="DesignPortfolio/MCC.svg" id="mcc-image" style="padding-right: 10px;">
+							<img src="DesignPortfolio/MCTheatreShowPoster.jpg" style="padding-right: 10px;">
+						</div>
+					</div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="rows">
+			<div class="card-container">
+				<h3 class="card-title">Publication Design</h3>
+					<div class="card-body">
+								<p class="card-text">Publication templates for Focus Magazine</p>
+						<div class="card-button-and-date">
+								<button type="button" onClick="showFour()" class="card-button">View</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-container" id="card-5">
+					<h3 class="card-title">Resume</h3>
+						<div class="card-body">
+								<p class="card-text">I'm looking for employment. Check out my Resume!</p>
+						<div class="card-button-and-date">
+								<button type="button" class="card-button" onClick="showFive()"><a href="Media/micahtullia-resume (2) copy.pdf" download>View</a></button>
+						</div>
+					</div>
+				</div>
+			
+			<div class="skills-container">
+				<div class="skills-icon-container">
+					<h2>Skills</h2>
+					<div class="skill-rows">
+						<div class="icon">
+							<img src="Media/html5_logo-with-wordmark.svg">
+							<img src="Media/w3_css-official.svg">
+							<img src="Media/logo-javascript.svg">
+							<img src="Media/GitHub-Mark.svg">
+						</div>
+					</div>
+					<div class="skill-rows">
+						<div class="icon">
+							<img src="Media/Git-Logo-2Color.svg">
+							<img src="Media/Microsoft_Office-Logo.wine.svg">
+							<img src="Media/Adobe-Dreamweaver-CC-02.svg">
+							<img src="Media/Bootstrap-01.svg">
+						</div>
+					</div>
+					<div class="skill-rows">
+						<div class="icon">
+							<img src="Media/Adobe-XD-CC-01.svg">
+							<img src="Media/after-effects-1.svg">
+							<img src="Media/Adobe-Photoshop-CC-02.svg">
+							<img src="Media/Adobe-Premiere-Pro-CC-02.svg">
+						</div>
+					</div>
+					<div class="skill-rows">
+						<div class="icon">
+							<img src="Media/java-svgrepo-com (1).svg">
+							<img src="Media/Adobe-Premiere-Rush-CC-01.svg">
+							<img src="Media/Adobe-Indesign-CC-02.svg">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<div id="card-four-preview">
+			<div class="preview-horizontal-slider">
+					<div class="preview-slider-container">
+						<div class="preview-item">
+							<img src="DesignPortfolio/Focus1.svg" style="min-width: 250px;" >
+							<img src="DesignPortfolio/Focus2.svg" style="min-width: 250px;">
+							<img src="DesignPortfolio/Focus3.svg" style="min-height:175px;">
+						</div>
+					</div>
+			</div>
+		</div>
+		
+		<div class="prof-skills-container">
+		<h2>Professional Services</h2>
+			<ul>
+				<li>Photo and Video Editing</li>
+				<li>Website Development and Management</li>
+				<li>Graphic Design</li>
+				<li>User Interface and User Experience (UI/UX) Design</li>
+					<ul>
+						<li>App and Website Interfaces</li>
+					</ul>
+			</ul>
+		</div>
+		
+		<div class="contact-me" style="margin-bottom: 80px;">
+			<h2 style="text-align: right; margin-top: 50px;">Need to get in touch? Contact Me!</h2>
+				<div class="contact-icons" style="float: right;">
+					<a href="mailto: micahtulliadesign@gmail.com"><img src="ContactMedia/Gmail-Logo.wine.svg" style="max-height: 40px;"></a>
+					<a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/micah-tullia?trk=profile-badge"><img src="ContactMedia/LinkedIn-Logo.wine.svg" style="max-height: 40px;"></a>
+				</div>
+				
+		</div>
+	</section>
+</main>
+
+  
+  
+<footer>
+  <div class="footer-container" style="display: flex;">
+	  <div class="logo-footer-container">
+	  	 <img src="DesignPortfolio/PersonalLogo.svg">
+	     <h1>Micah Tullia</h1>
+	  </div>
+	  <div class="footer-text" style="position: absolute; left: 650px; margin-top: 60px;">
+	  	<p style="color: aliceblue; font-size: 12px; text-align: right;">All programming and creative content created and owned by Micah Tullia.</p>
+	  </div>
+  </div>
+</footer>
+</body>
+</html>
